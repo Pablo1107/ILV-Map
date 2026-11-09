@@ -72,31 +72,7 @@ const Sugerencias = () => {
                     <AlertDescription px={5} display="block">
                       <VStack spacing={2}>
                         <Text w="100%">
-                          Por más que algún día
-                          <Link
-                            isExternal
-                            _hover={{
-                              _light: {
-                                color: "electivas.500",
-                              },
-                              _dark: {
-                                color: "electivas.400",
-                              },
-                            }}
-                            href="https://status.fede.dm"
-                          >
-                            {" "}
-                            me voy a recibir{" "}
-                            <ExternalLinkIcon
-                              _light={{
-                                color: "electivas.500",
-                              }}
-                              _dark={{
-                                color: "electivas.400",
-                              }}
-                            />
-                          </Link>{" "}
-                          y dejar de agregar funcionalidades nuevas al proyecto,
+                          Este proyecto lo mantengo en mis ratos libres, pero
                           los <em>bugs</em> críticos los voy a seguir
                           arreglando.
                         </Text>
@@ -106,35 +82,18 @@ const Sugerencias = () => {
                         <Text w="100%">
                           Más alla de eso, gracias por usar la herramienta!
                           Espero que te haya servido.
+                        </Text>
+                        <Text w="100%" fontSize="xs">
+                          Este proyecto está basado en gran parte en el trabajo
+                          de Fede del Mazo:{" "}
                           <Link
                             isExternal
-                            _hover={{
-                              _light: {
-                                color: "electivas.500",
-                              },
-                              _dark: {
-                                color: "electivas.400",
-                              },
-                            }}
-                            href="https://cafecito.app/FdelMazo"
+                            textDecoration="underline"
+                            href="https://github.com/FdelMazo/FIUBA-Map"
                           >
-                            {" "}
-                            Si me querés tirar un cafecito{" "}
-                            <ExternalLinkIcon
-                              _light={{
-                                color: "electivas.500",
-                              }}
-                              _dark={{
-                                color: "electivas.400",
-                              }}
-                            />
-                          </Link>{" "}
-                          , te lo agradezco mucho!
-                          <br />
-                          <Text fontSize="xs">
-                            (Aunque para ser sincero, aprecio más los mensajes
-                            que los cafecitos...)
-                          </Text>
+                            FIUBA Map
+                          </Link>
+                          .
                         </Text>
                       </VStack>
                       <form
@@ -193,7 +152,7 @@ const Sugerencias = () => {
                               color: "electivas.400",
                             },
                           }}
-                          href="https://github.com/FdelMazo/FIUBA-Map/issues/new"
+                          href="https://github.com/Pablo1107/ILV-Map/issues/new"
                         >
                           levantando un <em>issue</em> directamente.{" "}
                           <ExternalLinkIcon

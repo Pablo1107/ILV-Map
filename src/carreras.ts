@@ -1,7 +1,6 @@
-import { COLORS } from "./theme";
 import { UserType } from "./types/User";
 
-// La estructura de las carreras de FIUBA varía bastante. Es muy poco uniforme
+// La estructura de las carreras del ILV varía bastante. Es muy poco uniforme
 // Cada carrera tiene un json asociado donde se almacenan las materias
 
 // Algunas carreras tienen orientaciones
@@ -24,7 +23,7 @@ import { UserType } from "./types/User";
 // Con el tiempo si hay alguna correlativa esta mal escrita, alguien se da cuenta y lo avisa
 
 // Técnicamente este array no es de carreras, es de planes de estudio de cada carrera
-// Pero el FIUBA Map arranco antes de que existan muchos planes para cada carrera, y
+// Pero el ILV Map (basado en FIUBA Map) arranco antes de que existan muchos planes para cada carrera, y
 // ahora quedo que el usuario tiene una "carrera" asociada, aunque sea un plan, así que
 // lo dejamos así
 

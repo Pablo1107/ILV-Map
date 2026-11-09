@@ -65,7 +65,7 @@ class Node implements NodeType {
     this.label = breakWords(node.materia);
 
     // El group de vis.js determina los colores y miles de cosas mas
-    // La categoria es FIUBA: CBC, electiva, obligatoria, etc
+    // La categoria es del ILV: CBC, electiva, obligatoria, etc
     // El grupo es vis.js: "habilitada", "aprobada", etc
     // Las categorias son:
     // - *CBC: Las materias del CBC
@@ -131,7 +131,7 @@ class Node implements NodeType {
   // Si "requiereCBC", entonces se consideran los creditos totales
   // Si no, se consideran los creditos totales menos los creditos del CBC
   // Nota: que se consideren o no los creditos del CBC para esto
-  //  es MUY poco claro en todos los planes de FIUBA, y todos varian,
+  //  es MUY poco claro en todos los planes del ILV, y todos varian,
   //  asi que puede no ser 100% fiel a la realidad
   isHabilitada(ctx: GraphType.Info) {
     const { getters, getNode, creditos } = ctx;
