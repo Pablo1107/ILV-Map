@@ -8,6 +8,8 @@ Mapa de materias y sus correlativas de los profesorados del Instituto de Enseña
 
 La idea de este proyecto es presentar de una manera interactiva el plan de estudios de los profesorados del Instituto de Enseñanza Superior en Lenguas Vivas Juan Ramón Fernández, para saber que materias se pueden cursar, cuantos créditos se tienen actualmente y demás.
 
+<img src='public/fmap.png' alt='ILV Map'>
+
 - Tiene los profesorados de Alemán (plan 2015) y de Educación Superior en Alemán (plan 2023).
 
 - Trackea la cantidad de créditos que se tienen en la carrera, incluyendo materias obligatorias y optativas.
