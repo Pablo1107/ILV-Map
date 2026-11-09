@@ -7,6 +7,7 @@ const JSONBIN_INDEX_BIN = process.env.JSONBIN_INDEX_BIN!;
 // Opcional: si no hay collection, los bins se crean sueltos
 const JSONBIN_COLLECTION_ID = process.env.JSONBIN_COLLECTION_ID;
 const SITE_ORIGIN = "https://ilv-map.chofia2.duckdns.org";
+const ALLOWED_ORIGINS = [SITE_ORIGIN, "https://ilv-map.vercel.app"];
 
 interface DBRecord {
   padron: string;
@@ -20,7 +21,7 @@ type Body =
   | { action: "save"; padron: string; binId: string; record: DBRecord };
 
 const isAllowedOrigin = (origin: string) =>
-  origin.startsWith(SITE_ORIGIN) ||
+  ALLOWED_ORIGINS.some((o) => origin.startsWith(o)) ||
   origin.startsWith("http://localhost:");
 
 const corsHeadersFor = (origin: string) => ({

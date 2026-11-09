@@ -3,7 +3,7 @@ import { COLORS } from "./theme";
 import { UserType } from "./types/User";
 import { NodeType } from "./types/Node";
 
-export const DB_PROXY = "https://fiuba-map-db.vercel.app/api/db";
+export const DB_PROXY = "https://ilv-map.vercel.app/api/db";
 
 export const BUGS_FORM =
   "https://docs.google.com/forms/d/1Mr4-4qWqZKaobjG3GI30aPvC5qlMsd6Eib3YGUbLd2k/formResponse";
