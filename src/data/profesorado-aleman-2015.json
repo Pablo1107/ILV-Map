@@ -1,0 +1,408 @@
+[
+  {
+    "id": "CBC",
+    "materia": "Examen de Ingreso",
+    "creditos": 0,
+    "categoria": "CBC",
+    "level": 0
+  },
+  {
+    "id": "DG",
+    "materia": "Didáctica General",
+    "creditos": 1,
+    "categoria": "Materias Obligatorias",
+    "correlativas": "CBC",
+    "level": 1
+  },
+  {
+    "id": "F",
+    "materia": "Filosofía",
+    "creditos": 1,
+    "categoria": "Materias Obligatorias",
+    "correlativas": "CBC",
+    "level": 1
+  },
+  {
+    "id": "P",
+    "materia": "Pedagogía",
+    "creditos": 1,
+    "categoria": "Materias Obligatorias",
+    "correlativas": "CBC",
+    "level": 1
+  },
+  {
+    "id": "SPE",
+    "materia": "Sistema y Política Educativa",
+    "creditos": 1,
+    "categoria": "Materias Obligatorias",
+    "correlativas": "P",
+    "level": 2
+  },
+  {
+    "id": "PE",
+    "materia": "Psicología Educacional",
+    "creditos": 1,
+    "categoria": "Materias Obligatorias",
+    "correlativas": "CBC",
+    "level": 1
+  },
+  {
+    "id": "TLEO",
+    "materia": "Taller de Lectura, Escritura y Oralidad",
+    "creditos": 1,
+    "categoria": "Materias Obligatorias",
+    "correlativas": "LC",
+    "level": 1
+  },
+  {
+    "id": "TNT",
+    "materia": "Taller de Nuevas Tecnologías",
+    "creditos": 1,
+    "categoria": "Materias Obligatorias",
+    "correlativas": "CBC",
+    "level": 1
+  },
+  {
+    "id": "TESI",
+    "materia": "Taller de Educación Sexual Integral (Taller)",
+    "creditos": 1,
+    "categoria": "Materias Obligatorias",
+    "correlativas": "PE",
+    "level": 1
+  },
+  {
+    "id": "RDGA",
+    "materia": "Rol Docente y Grupos de Aprendizaje",
+    "creditos": 1,
+    "categoria": "Materias Obligatorias",
+    "correlativas": "DG-PE",
+    "level": 2
+  },
+  {
+    "id": "LC",
+    "materia": "Lengua Castellana",
+    "creditos": 1,
+    "categoria": "Materias Obligatorias",
+    "correlativas": "CBC",
+    "level": 1
+  },
+  {
+    "id": "TC",
+    "materia": "Trabajo de Campo",
+    "creditos": 1,
+    "categoria": "Materias Obligatorias",
+    "level": 1
+  },
+  {
+    "id": "DDHHSE",
+    "materia": "Derechos Humanos, Sociedad y Estado",
+    "creditos": 1,
+    "categoria": "Materias Electivas",
+    "correlativas": "SPE",
+    "level": 2
+  },
+  {
+    "id": "IE",
+    "materia": "Instituciones Educativas",
+    "creditos": 1,
+    "categoria": "Materias Electivas",
+    "correlativas": "P",
+    "level": 2
+  },
+  {
+    "id": "NE",
+    "materia": "Nuevos Escenarios: Cultura, Tecnología y Subjetividad",
+    "creditos": 1,
+    "categoria": "Materias Electivas",
+    "correlativas": "F",
+    "level": 2
+  },
+  {
+    "id": "LAI",
+    "materia": "Lengua Alemana I",
+    "categoria": "Materias Obligatorias",
+    "creditos": 1,
+    "correlativas": "CBC",
+    "level": 1
+  },
+  {
+    "id": "LAII",
+    "materia": "Lengua Alemana II",
+    "categoria": "Materias Obligatorias",
+    "creditos": 1,
+    "correlativas": "LAI",
+    "level": 1
+  },
+  {
+    "id": "LAIII",
+    "materia": "Lengua Alemana III",
+    "categoria": "Materias Obligatorias",
+    "creditos": 1,
+    "correlativas": "LAII",
+    "level": 2
+  },
+  {
+    "id": "LAIV",
+    "materia": "Lengua Alemana IV",
+    "categoria": "Materias Obligatorias",
+    "creditos": 1,
+    "correlativas": "LAIII",
+    "level": 2
+  },
+  {
+    "id": "LAV",
+    "materia": "Lengua Alemana V",
+    "categoria": "Materias Obligatorias",
+    "creditos": 1,
+    "correlativas": "LAIV",
+    "level": 3
+  },
+  {
+    "id": "LAVI",
+    "materia": "Lengua Alemana VI",
+    "categoria": "Materias Obligatorias",
+    "creditos": 1,
+    "correlativas": "LAV",
+    "level": 3
+  },
+  {
+    "id": "TEA",
+    "materia": "Taller de Escritura en Aleman",
+    "categoria": "Materias Obligatorias",
+    "creditos": 1,
+    "correlativas": "CBC",
+    "level": 1
+  },
+  {
+    "id": "SLEI",
+    "materia": "Segunda Lengua Extranjera - Nivel I",
+    "categoria": "Materias Obligatorias",
+    "creditos": 1,
+    "correlativas": "CBC",
+    "level": 1
+  },
+  {
+    "id": "SLEII",
+    "materia": "Segunda Lengua Extranjera - Nivel II",
+    "categoria": "Materias Obligatorias",
+    "creditos": 1,
+    "correlativas": "SLEI",
+    "level": 2
+  },
+  {
+    "id": "FAI",
+    "materia": "Fonética Alemana I",
+    "categoria": "Materias Obligatorias",
+    "creditos": 1,
+    "correlativas": "CBC",
+    "level": 1
+  },
+  {
+    "id": "FAII",
+    "materia": "Fonética Alemana II",
+    "categoria": "Materias Obligatorias",
+    "creditos": 1,
+    "correlativas": "FAI",
+    "level": 2
+  },
+  {
+    "id": "FAIII",
+    "materia": "Fonética Alemana III",
+    "categoria": "Materias Obligatorias",
+    "creditos": 1,
+    "correlativas": "FAII",
+    "level": 2
+  },
+  {
+    "id": "DFA",
+    "materia": "Dicción y Fonética en el Aula",
+    "categoria": "Materias Obligatorias",
+    "creditos": 1,
+    "correlativas": "FAIII-DALCE-O",
+    "level": 3
+  },
+  {
+    "id": "GAI",
+    "materia": "Gramática Alemana I",
+    "categoria": "Materias Obligatorias",
+    "creditos": 1,
+    "correlativas": "LAI",
+    "level": 2
+  },
+  {
+    "id": "GAII",
+    "materia": "Gramática Alemana II",
+    "categoria": "Materias Obligatorias",
+    "creditos": 1,
+    "correlativas": "GAI",
+    "level": 2
+  },
+  {
+    "id": "GCAE",
+    "materia": "Gramática Contrastiva Alemán - Español",
+    "categoria": "Materias Obligatorias",
+    "creditos": 1,
+    "correlativas": "L-TLEO-GAII-LAIII",
+    "level": 4
+  },
+  {
+    "id": "L",
+    "materia": "Lingüística",
+    "categoria": "Materias Obligatorias",
+    "creditos": 1,
+    "correlativas": "LAII-LC",
+    "level": 2
+  },
+  {
+    "id": "AD",
+    "materia": "Análisis del Discurso",
+    "categoria": "Materias Obligatorias",
+    "creditos": 1,
+    "correlativas": "L-TLEO-LAII",
+    "level": 3
+  },
+  {
+    "id": "IEL",
+    "materia": "Introducción a los Estudios Literarios",
+    "categoria": "Materias Obligatorias",
+    "creditos": 1,
+    "correlativas": "LAIII",
+    "level": 3
+  },
+  {
+    "id": "LIJ",
+    "materia": "Literatura Infantil y Juvenil",
+    "categoria": "Materias Obligatorias",
+    "creditos": 1,
+    "correlativas": "LAII",
+    "level": 3
+  },
+  {
+    "id": "HAEI",
+    "materia": "Historia Alemana y Europea I",
+    "categoria": "Materias Obligatorias",
+    "creditos": 1,
+    "correlativas": "LAIII",
+    "level": 2
+  },
+  {
+    "id": "EC",
+    "materia": "Estudios Culturales",
+    "categoria": "Materias Obligatorias",
+    "creditos": 1,
+    "correlativas": "HAEI-IEL",
+    "level": 4
+  },
+  {
+    "id": "EIALE",
+    "materia": "Educación Inclusiva en el Aprendizaje de Lenguas Extranjeras",
+    "categoria": "Materias Obligatorias",
+    "creditos": 1,
+    "correlativas": "P-PE",
+    "level": 3
+  },
+  {
+    "id": "DALCE",
+    "materia": "Didáctica del ALCE",
+    "categoria": "Materias Obligatorias",
+    "creditos": 1,
+    "correlativas": "DG",
+    "level": 2
+  },
+  {
+    "id": "DALCEIP",
+    "materia": "Didáctica del ALCE y Sujetos de los Niveles Inicial y Primario",
+    "categoria": "Materias Obligatorias",
+    "creditos": 1,
+    "correlativas": "DALCE-O",
+    "level": 2
+  },
+  {
+    "id": "DALCEM",
+    "materia": "Didáctica del ALCE y Sujetos del Nivel Medio",
+    "categoria": "Materias Obligatorias",
+    "creditos": 1,
+    "correlativas": "DALCE-O",
+    "level": 3
+  },
+  {
+    "id": "APD",
+    "materia": "Aproximación a la Práctica Docente",
+    "categoria": "Materias Obligatorias",
+    "creditos": 1,
+    "correlativas": "P",
+    "level": 1
+  },
+  {
+    "id": "O",
+    "materia": "Observación",
+    "categoria": "Materias Obligatorias",
+    "creditos": 1,
+    "correlativas": "APD",
+    "level": 2
+  },
+  {
+    "id": "APEIP",
+    "materia": "Ayudantías y Prácticas de Enseñanza en los Niveles Inicial y Primario",
+    "categoria": "Materias Obligatorias",
+    "creditos": 1,
+    "correlativas": "DALCEIP",
+    "level": 3
+  },
+  {
+    "id": "APEM",
+    "materia": "Ayudantías y Prácticas de Enseñanza en el Nivel Medio",
+    "categoria": "Materias Obligatorias",
+    "creditos": 1,
+    "correlativas": "DALCEM",
+    "level": 4
+  },
+  {
+    "id": "MPJ",
+    "materia": "Música, Plástica y Juegos",
+    "categoria": "Materias Electivas",
+    "creditos": 1,
+    "correlativas": "DALCE-O",
+    "level": 3
+  },
+  {
+    "id": "PMDS",
+    "materia": "Producción de Materiales en Diferentes Soportes",
+    "categoria": "Materias Electivas",
+    "creditos": 1,
+    "correlativas": "DALCE-O",
+    "level": 3
+  },
+  {
+    "id": "NO",
+    "materia": "Narración Oral",
+    "categoria": "Materias Electivas",
+    "creditos": 1,
+    "correlativas": "DALCE-O",
+    "level": 3
+  },
+  {
+    "id": "DGRAM",
+    "materia": "Didáctica de la Gramática",
+    "categoria": "Materias Electivas",
+    "creditos": 1,
+    "correlativas": "GAII-DALCE-O",
+    "level": 3
+  },
+  {
+    "id": "RPIP",
+    "materia": "Residencia Pedagógica en los Niveles Inicial y Primario",
+    "categoria": "Materias Obligatorias",
+    "creditos": 1,
+    "correlativas": "LAVI-APEIP-AD-GCAE-RDGA",
+    "level": 4
+  },
+  {
+    "id": "RPM",
+    "materia": "Residencia Pedagógica en el Nivel Medio",
+    "categoria": "Materias Obligatorias",
+    "creditos": 1,
+    "correlativas": "LAVI-APEM-AD-GCAE-RDGA",
+    "level": 4
+  }
+]

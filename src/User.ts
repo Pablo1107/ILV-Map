@@ -6,10 +6,10 @@ import { UserType } from "./types/User";
 // El padron se setea una vez que el usuario se loguea exitosamente (O sea, logged = padron !== "")
 const initialUser: UserType.Info = {
   padron: "",
-  carrera: CARRERAS.find((c) => c.id === "informatica-2020")!,
+  carrera: CARRERAS.find((c) => c.id === "profesoradoaleman")!,
   orientacion: null,
   finDeCarrera: null,
-  record: { padron: "", ultimaCarrera: "informatica-2020", carreras: {} },
+  record: { padron: "", ultimaCarrera: "profesoradoaleman", carreras: {} },
 };
 
 const Login = (): UserType.Context => {
@@ -72,7 +72,7 @@ const Login = (): UserType.Context => {
     const { record, binId: foundBinId } = res;
     const carrera =
       CARRERAS.find((c) => c.id === record.ultimaCarrera) ??
-      CARRERAS.find((c) => c.id === "informatica-2020")!;
+      CARRERAS.find((c) => c.id === "profesoradoaleman")!;
     const carreraData = record.carreras[carrera.id];
     const orientacion = carreraData?.orientacion
       ? carrera.orientaciones?.find((o) => o.nombre === carreraData.orientacion)
