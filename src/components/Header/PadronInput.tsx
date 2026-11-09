@@ -3,7 +3,7 @@ import { Button, Input, Tooltip, useToast } from "@chakra-ui/react";
 import React from "react";
 import { UserContext } from "../../MapContext";
 
-// Input del padron, para cuando no estas logueado
+// Input del DNI (internamente se sigue llamando "padron"), para cuando no estas logueado
 // On boot, si hay un padron en el local storage, usa ese
 // Si el padron se pudo loguear, genial. Si no, te muestra un botoncito de "registrate" para guardar en la db
 const PadronInput = () => {
@@ -50,25 +50,31 @@ const PadronInput = () => {
         }
       }}
     >
-      <Input
-        css={{
-          "&::placeholder": {
-            color: "LightGray",
-          },
-        }}
-        borderRadius={"md"}
-        size="sm"
-        w="20ch"
-        borderColor="white"
-        color="white"
-        name="padron"
-        placeholder="Padrón"
-        value={user.padron || padronInput}
-        autoFocus={true}
-        isReadOnly={loading || logged}
-        onChange={(e) => setPadronInput(e.target.value)}
-        isDisabled={loading}
-      />
+      <Tooltip
+        hasArrow
+        label="Documento Nacional de Identidad"
+        placement="bottom"
+      >
+        <Input
+          css={{
+            "&::placeholder": {
+              color: "LightGray",
+            },
+          }}
+          borderRadius={"md"}
+          size="sm"
+          w="20ch"
+          borderColor="white"
+          color="white"
+          name="padron"
+          placeholder="DNI"
+          value={user.padron || padronInput}
+          autoFocus={true}
+          isReadOnly={loading || logged}
+          onChange={(e) => setPadronInput(e.target.value)}
+          isDisabled={loading}
+        />
+      </Tooltip>
 
       {!dbUnavailable && (
         <Tooltip

@@ -12,7 +12,7 @@ La idea de este proyecto es presentar de una manera interactiva el plan de estud
 
 - Trackea la cantidad de créditos que se tienen en la carrera, incluyendo materias obligatorias y optativas.
 
-- Base de datos! Se pueden marcar todas las materias apobradas y guardarlas bajo un padrón (o cualquier clave).
+- Base de datos! Se pueden marcar todas las materias apobradas y guardarlas bajo tu DNI (Documento Nacional de Identidad).
 
 - Poner materias en final! Para no olvidarse los finales colgados.
 
