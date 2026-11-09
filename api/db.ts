@@ -1,9 +1,12 @@
 export const config = { runtime: "edge" };
 
 const JSONBIN_API = "https://api.jsonbin.io/v3/b";
-const JSONBIN_INDEX_BIN = "6a95c0eff5f4af5e2958dca2";
-const JSONBIN_COLLECTION_ID = "6a95d5feda38895dfe27a4a7";
-const JSONBIN_MASTER_KEY = process.env.JSONBIN_MASTER_KEY!;
+// Todo se configura por env vars en Vercel (nada de keys en el repo)
+const JSONBIN_ACCESS_KEY = process.env.JSONBIN_ACCESS_KEY!;
+const JSONBIN_INDEX_BIN = process.env.JSONBIN_INDEX_BIN!;
+// Opcional: si no hay collection, los bins se crean sueltos
+const JSONBIN_COLLECTION_ID = process.env.JSONBIN_COLLECTION_ID;
+const SITE_ORIGIN = "https://ilv-map.chofia2.duckdns.org";
 
 interface DBRecord {
   padron: string;
@@ -17,13 +20,13 @@ type Body =
   | { action: "save"; padron: string; binId: string; record: DBRecord };
 
 const isAllowedOrigin = (origin: string) =>
-  origin.startsWith("https://fede.dm") ||
+  origin.startsWith(SITE_ORIGIN) ||
   origin.startsWith("http://localhost:");
 
 const corsHeadersFor = (origin: string) => ({
   "Access-Control-Allow-Origin": isAllowedOrigin(origin)
     ? origin
-    : "https://fede.dm",
+    : SITE_ORIGIN,
   "Access-Control-Allow-Methods": "POST, OPTIONS",
   "Access-Control-Allow-Headers": "Content-Type",
 });
@@ -33,7 +36,7 @@ const jsonbinreq = (path: string, init?: RequestInit) => {
     ...init,
     headers: {
       "Content-Type": "application/json",
-      "X-Master-Key": JSONBIN_MASTER_KEY,
+      "X-Access-Key": JSONBIN_ACCESS_KEY,
       ...(init?.headers || {}),
     },
   });
@@ -160,7 +163,9 @@ export default async function handler(req: Request): Promise<Response> {
           method: "POST",
           headers: {
             "X-Bin-Name": body.padron,
-            "X-Collection-Id": JSONBIN_COLLECTION_ID,
+            ...(JSONBIN_COLLECTION_ID && {
+              "X-Collection-Id": JSONBIN_COLLECTION_ID,
+            }),
           },
           body: JSON.stringify(body.record),
         }),
