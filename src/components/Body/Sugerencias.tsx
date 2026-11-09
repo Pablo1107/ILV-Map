@@ -82,6 +82,35 @@ const Sugerencias = () => {
                         <Text w="100%">
                           Más alla de eso, gracias por usar la herramienta!
                           Espero que te haya servido.
+                          <Link
+                            isExternal
+                            _hover={{
+                              _light: {
+                                color: "electivas.500",
+                              },
+                              _dark: {
+                                color: "electivas.400",
+                              },
+                            }}
+                            href="https://cafecito.app/pdealbera"
+                          >
+                            {" "}
+                            Si me querés tirar un cafecito{" "}
+                            <ExternalLinkIcon
+                              _light={{
+                                color: "electivas.500",
+                              }}
+                              _dark={{
+                                color: "electivas.400",
+                              }}
+                            />
+                          </Link>{" "}
+                          , te lo agradezco mucho!
+                          <br />
+                          <Text fontSize="xs">
+                            (Aunque para ser sincero, aprecio más los mensajes
+                            que los cafecitos...)
+                          </Text>
                         </Text>
                         <Text w="100%" fontSize="xs">
                           Este proyecto está basado en gran parte en el trabajo

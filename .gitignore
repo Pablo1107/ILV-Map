@@ -4,3 +4,5 @@ build/
 .env
 # JetBrains editor config
 .idea
+# PCI de los planes (no se commitean)
+IESLVJRF-PCI-*.pdf

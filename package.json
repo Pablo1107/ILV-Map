@@ -26,7 +26,7 @@
     "prettier": "^3.2.4",
     "typescript": "^4.9.5"
   },
-  "homepage": "https://ilv-map.chofia2.duckdns.org",
+  "homepage": "https://ilv-map.vercel.app",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",

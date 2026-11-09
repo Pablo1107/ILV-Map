@@ -1,4 +1,4 @@
-# [ILV Map](https://ilv-map.chofia2.duckdns.org/)
+# [ILV Map](https://ilv-map.vercel.app/)
 
 Mapa de materias y sus correlativas de los profesorados del Instituto de Enseñanza Superior en Lenguas Vivas Juan Ramón Fernández
 

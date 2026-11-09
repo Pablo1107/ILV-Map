@@ -6,8 +6,8 @@ const JSONBIN_ACCESS_KEY = process.env.JSONBIN_ACCESS_KEY!;
 const JSONBIN_INDEX_BIN = process.env.JSONBIN_INDEX_BIN!;
 // Opcional: si no hay collection, los bins se crean sueltos
 const JSONBIN_COLLECTION_ID = process.env.JSONBIN_COLLECTION_ID;
-const SITE_ORIGIN = "https://ilv-map.chofia2.duckdns.org";
-const ALLOWED_ORIGINS = [SITE_ORIGIN, "https://ilv-map.vercel.app"];
+const SITE_ORIGIN = "https://ilv-map.vercel.app";
+const ALLOWED_ORIGINS = [SITE_ORIGIN];
 
 interface DBRecord {
   padron: string;
