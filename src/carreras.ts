@@ -30,7 +30,7 @@ import { UserType } from "./types/User";
 export const CARRERAS: UserType.Carrera[] = [
   {
     id: "profesoradoaleman",
-    link: "",
+    link: "https://ieslvf-caba.infd.edu.ar/sitio/upload/IESLVJRF-PCI-Profesorado_de_Aleman-2015.pdf",
     ano: 2015,
     graph: require("./data/profesorado-aleman-2015.json"),
     creditos: {
@@ -40,7 +40,7 @@ export const CARRERAS: UserType.Carrera[] = [
   },
   {
     id: "profesoradoalemansuperior",
-    link: "",
+    link: "https://ieslvf-caba.infd.edu.ar/sitio/upload/IESLVJRF-PCI-Profesorado_de_Educacion_Superior_en_Aleman_NOV.pdf",
     ano: 2023,
     graph: require("./data/profesorado-educacion-superior-aleman-2023.json"),
     creditos: {
