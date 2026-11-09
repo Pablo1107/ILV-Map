@@ -56,24 +56,18 @@ const MateriaStatus = () => {
       >
         <Badge width="100%" px={2} colorScheme="green" variant="outline">
           {node?.id === "CBC"
-            ? `Clickealo para ver las materias!`
+            ? `Requisito de ingreso`
             : `Otorga ${node?.creditos} créditos`}
         </Badge>
 
         {node?.requiere && (
           <Tooltip
             placement="bottom"
-            label="El plan de estudios no es muy claro de si hay que contabilizar los créditos del CBC para esto, entonces no estoy seguro de que es válido acá. Además, los docentes suelen hacer lo que quieren con esto, así que toma todo con pinzas y asegurate de poder cursar la materia antes de anotarte."
+            label="El plan de estudios no es muy claro de si hay que contabilizar los créditos del ingreso para esto, entonces no estoy seguro de que es válido acá. Además, los docentes suelen hacer lo que quieren con esto, así que toma todo con pinzas y asegurate de poder cursar la materia antes de anotarte."
           >
             <Badge width="100%" px={2} colorScheme="orange" variant="outline">
               Requiere {node?.requiere} créditos{" "}
-              {node?.requiereCBC ? (
-                "(con CBC)"
-              ) : node?.requiereCBC === false ? (
-                "(sin CBC)"
-              ) : (
-                <QuestionIcon />
-              )}
+              <QuestionIcon />
             </Badge>
           </Tooltip>
         )}

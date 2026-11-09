@@ -780,17 +780,7 @@ const Graph = (userContext: UserType.Context): GraphType.Context => {
       return electivasCreditos;
     };
 
-    // Primeros creditos a mostrar: los 38 del CBC
-    // Lo mostramos como siempre aprobado del todo
-    const cbc = getters.CBC();
-    creditos.push({
-      ...CREDITOS["CBC"],
-      creditosNecesarios: cbc.reduce(accCreditos, 0),
-      creditos: cbc.reduce(accCreditos, 0),
-      nmaterias: cbc.length,
-    });
-
-    // Despues, las obligatorias
+    // Primero, las obligatorias
     const allObligatorias = getters.Obligatorias();
     const obligatorias = getters.ObligatoriasAprobadas();
     creditos.push({

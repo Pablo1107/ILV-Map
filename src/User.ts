@@ -139,7 +139,7 @@ const Login = (): UserType.Context => {
   ) => {
     const carreras = { ...user.record.carreras };
 
-    // Si no guardo más de una materia (el CBC por defecto), le borramos el mapa
+    // Si no guardo más de una materia (el ingreso por defecto), le borramos el mapa
     if (materias.length <= 1) {
       delete carreras[user.carrera.id];
     } else {

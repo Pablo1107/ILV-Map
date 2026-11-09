@@ -22,14 +22,13 @@ import { GraphContext } from "../../MapContext";
 import { promediar } from "../../utils";
 
 // Componente para mostrar el promedio general de la carrera
-// y en hover mostrar el promedio con CBC y poder agregar aplazos
+// y en hover poder agregar aplazos
 const Promedio = () => {
   const { getters, aplazos, setAplazos } = React.useContext(GraphContext);
 
   const promedio = React.useMemo(() => {
     return {
       promedio: promediar(getters.MateriasAprobadasSinEquivalenciasSinCBC()),
-      promedioConCBC: promediar(getters.MateriasAprobadasConCBC()),
       promedioConAplazos: promediar([
         ...getters.MateriasAprobadasSinEquivalenciasSinCBC(),
         ...Array(aplazos).fill({ nota: 2 }),
@@ -83,12 +82,6 @@ const Promedio = () => {
               </strong>
             </Text>
             <Text fontSize="md">{promedio.promedioConAplazos}</Text>
-          </Flex>
-          <Flex justifyContent="space-between" alignItems="center">
-            <Text fontSize="md">
-              <strong>Promedio con CBC</strong>
-            </Text>
-            <Text fontSize="md">{promedio.promedioConCBC}</Text>
           </Flex>
         </PopoverBody>
       </PopoverContent>

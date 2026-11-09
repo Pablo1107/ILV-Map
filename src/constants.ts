@@ -159,12 +159,6 @@ export const GRAPHOPTIONS = {
 
 // Colores asignados a cada barrita de progreso de los creditos
 export const CREDITOS = {
-  CBC: {
-    nombrecorto: "CBC",
-    nombre: "Ciclo Básico Común",
-    bg: COLORS.aprobadas[50],
-    color: "aprobadas",
-  },
   Obligatorias: {
     nombrecorto: "Obligatorias",
     nombre: "Materias Obligatorias",
