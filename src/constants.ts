@@ -6,14 +6,16 @@ import { NodeType } from "./types/Node";
 export const DB_PROXY = "https://ilv-map.vercel.app/api/db";
 
 export const BUGS_FORM =
-  "https://docs.google.com/forms/d/1Mr4-4qWqZKaobjG3GI30aPvC5qlMsd6Eib3YGUbLd2k/formResponse";
+  "https://docs.google.com/forms/d/e/1FAIpQLSey_FN5vDznkNpfD72koyH6VoUB7CdojD31Eb6am0EV0uBLmQ/formResponse";
 
+// Los entries son los ids de las preguntas del form, en este orden:
+// padron (DNI), carrera, orientacion, fin de carrera, bug text
 export const BUGS_FORM_ENTRIES = {
-  padron: "entry.108884877",
-  carrera: "entry.30310619",
-  orientacion: "entry.2052513370",
-  finDeCarrera: "entry.1835776497",
-  bug: "entry.817568535",
+  padron: "entry.93657101",
+  carrera: "entry.126440377",
+  orientacion: "entry.659862618",
+  finDeCarrera: "entry.1360026885",
+  bug: "entry.1924080689",
 };
 
 // Dibuja un rombo
